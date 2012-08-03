@@ -1,0 +1,13 @@
+This project implements some common data structures using non blocking mechanism. Writing nonblocking data structures and algorithms have been made
+in Java, starting 5.0 by the addition of atomic hardware primitives like compare-and-swap(CAS). java.util.concurrent makes extensive use of this. 
+
+Non blocking algorithms are concurrent algorithms where thread safety is implemented using CAS and not locks. They can be either Lock free i.e there is 
+a guaranteed system wide progress or Wait free i.e there is a guaranteed per thread progress.
+
+More information can be found at: http://en.wikipedia.org/wiki/Non-blocking_algorithm
+
+
+Currently implemented data structures:
+
+NonBlockingStack - A non-blocking implementation of Stack. Unlike the stack implementation in java.util.Stack, this Stack iterates in LIFO order. 
+
